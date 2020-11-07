@@ -1,5 +1,4 @@
 <template>
-  <div id="app">
   <div id="tab-bar">
     <div class="tab-bar-item">
       <img src="./assets/img/tabbar1.jpg" />
@@ -18,12 +17,11 @@
     </div>
   </div>
   
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'TabBar',
   components: {
   },
 }

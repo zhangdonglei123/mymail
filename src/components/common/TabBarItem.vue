@@ -8,10 +8,13 @@
 <script>
 export default {
     name: 'TabBarItem',
+    props: {
+        path: String
+    },
     methods: {
         itemClick() {
             console.log("aaa");
-            this.$router.push('/home');
+            this.$router.push(this.path);
         }
     }
 }

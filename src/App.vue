@@ -1,21 +1,20 @@
 <template>
 <div id="app">
-    <router-link to="home">aa</router-link>
     <router-view></router-view>
     <TabBar>
-        <TabBarItem>
+        <TabBarItem path="home">
             <img src="@/assets/img/tabbar1.jpg" slot="tab-bar-item-img" />
             <div slot="tab-bar-item-div">首页</div>
         </TabBarItem>
-        <TabBarItem>
+        <TabBarItem path="catagory">
             <img src="@/assets/img/tabbar2.jpg" slot="tab-bar-item-img" />
             <div slot="tab-bar-item-div">分类</div>
         </TabBarItem>
-        <TabBarItem>
+        <TabBarItem path="cart">
             <img src="@/assets/img/tabbar3.jpg" slot="tab-bar-item-img" />
             <div slot="tab-bar-item-div">购物车</div>
         </TabBarItem>
-        <TabBarItem>
+        <TabBarItem path="profile">
             <img src="@/assets/img/tabbar4.jpg" slot="tab-bar-item-img" />
             <div slot="tab-bar-item-div">我的</div>
         </TabBarItem>

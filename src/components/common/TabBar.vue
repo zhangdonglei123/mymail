@@ -1,12 +1,12 @@
 <template>
-  <div id="tab-bar">
+<div id="tab-bar">
     <slot></slot>
-  </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'TabBar'
+    name: 'TabBar'
 }
 </script>
 
@@ -19,5 +19,4 @@ export default {
     right: 0;
     bottom: 0;
 }
-
 </style>

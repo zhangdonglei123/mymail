@@ -1,13 +1,19 @@
 <template>
-    <div class="tab-bar-item">
-        <slot name="tab-bar-item-img"></slot>
-        <slot name="tab-bar-item-div"></slot>
-     </div>
+<div class="tab-bar-item" @click="itemClick">
+    <slot name="tab-bar-item-img"></slot>
+    <slot name="tab-bar-item-div"></slot>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'TabBarItem'
+    name: 'TabBarItem',
+    methods: {
+        itemClick() {
+            console.log("aaa");
+            this.$router.push('/home');
+        }
+    }
 }
 </script>
 
